@@ -1,0 +1,124 @@
+# Ignore all root files and directories ...
+/*
+# ... except bellow
+!/nbproject/
+/nbproject/private/
+!/.ddev
+!/.ddev/*
+!/scripts/
+!/scripts/*
+/scripts/private-variables.txt
+/scripts/private-variables.sh
+!/behat_tests/
+!/config/
+!/.git/
+!/docker/
+!/drush/
+!/images/
+!/public_html/
+/public_html/core/
+/public_html/modules/contrib/
+/public_html/themes/contrib/
+!/tests/
+/tests/output
+/tests/rest
+!.editorconfig
+!.git-ftp-ignore
+!.gitattributes
+!.gitignore
+!/bitbucket-pipelines.yml
+!/composer.json
+!/composer.lock
+!/docker-compose.yml
+!/LICENSE
+!/load.environment.php
+!/phpunit.xml
+!/phpunit.xml.dist
+!/README.md
+!/README-DRUPAL.md
+
+# Ignore sensitive information
+/public_html/sites/*/settings.local.php
+/public_html/sites/*/services*.yml
+
+# Ignore Drupal's file directory
+/public_html/sites/*/files/*
+!/public_html/sites/*/files/.htaccess
+/public_html/sites/*/private
+!/private
+/private/*
+!/private/.htaccess
+
+# Ignore SimpleTest multi-site environment.
+/public_html/sites/simpletest
+
+# Ignore .env files as they are personal
+/.env
+
+# Ignore all auto-generated files
+*.orig
+*.rej
+
+# Ignore logs file.
+error_log
+
+#
+# PhpStorm project files
+#
+!/.idea/
+
+# Ignore phpstorm project file
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff:
+.idea/watcherTasks.xml
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+.idea/inspectionProfiles/
+.idea/php.xml
+.idea/shelf
+
+# Sensitive or high-churn files:
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.xml
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+
+# Gradle:
+.idea/**/gradle.xml
+.idea/**/libraries
+.idea/**/libraries
+
+# CMake
+cmake-build-debug/
+
+# Mongo Explorer plugin:
+.idea/**/mongoSettings.xml
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
