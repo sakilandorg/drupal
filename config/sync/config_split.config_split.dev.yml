@@ -9,7 +9,9 @@ folder: ../config/splits/dev
 module: {  }
 theme: {  }
 blacklist: {  }
-graylist: {  }
+graylist:
+  - environment_indicator.indicator
+  - environment_indicator.settings
 graylist_dependents: true
 graylist_skip_equal: true
 weight: 0
