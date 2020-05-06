@@ -16,11 +16,15 @@
     ],
     "require": {
         "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6",
+        "drupal/admin_toolbar": "^2.2",
+        "drupal/coffee": "^1.0",
         "drupal/config_split": "^1.4",
         "drupal/console": "~1.0",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/module_filter": "^3.1",
         "drush/drush": "^10.2"
     },
     "conflict": {
@@ -83,6 +87,11 @@
                 "  * Remove the plugin that prints this message:",
                 "      composer remove drupal/core-project-message"
             ]
+        },
+        "patches": {
+            "drupal/coffee": {
+                "Allow user to specify keyboard shortcut": "https://www.drupal.org/files/issues/1734898-7.coffee-hotkeys.patch"
+            }
         }
     }
 }
