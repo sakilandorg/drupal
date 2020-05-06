@@ -748,6 +748,18 @@ $settings['entity_update_batch_size'] = 50;
 $settings['entity_update_backup'] = TRUE;
 
 /**
+ * Configuration sync settings.
+ */
+$config_directories['sync'] = '../config/sync';
+$settings['config_sync_directory'] = '../config/sync';
+$config['config_split.config_split.local']['status'] = TRUE;
+$config['config_split.config_split.local']['folder'] = '../config/splits/local';
+$config['config_split.config_split.dev']['status'] = FALSE;
+$config['config_split.config_split.dev']['folder'] = '../config/splits/dev';
+$config['config_split.config_split.live']['status'] = FALSE;
+$config['config_split.config_split.live']['folder'] = '../config/splits/live';
+
+/**
  * Load local development override configuration, if available.
  *
  * Use settings.local.php to override variables on secondary (staging,
