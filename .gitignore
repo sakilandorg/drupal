@@ -17,6 +17,7 @@
 !/images/
 !/public_html/
 /public_html/core/
+/public_html/libraries/
 /public_html/modules/contrib/
 /public_html/themes/contrib/
 !/tests/

@@ -12,12 +12,29 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ckeditor/div",
+                "version": "4.10.1",
+                "type": "drupal-library",
+                "extra": {
+                    "installer-name": "ckeditor/plugins/div"
+                },
+                "dist": {
+                    "url": "https://download.ckeditor.com/div/releases/div_4.10.1.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
+        "ckeditor/div": "4.10.1",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "drupal/admin_toolbar": "^2.2",
+        "drupal/ckeditor_div_manager": "^1.0.0",
         "drupal/coffee": "^1.0",
         "drupal/config_split": "^1.4",
         "drupal/console": "~1.0",
