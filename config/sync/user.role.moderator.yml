@@ -1,0 +1,10 @@
+uuid: ea251c6b-e005-403a-88fa-ef3495f37751
+langcode: en
+status: true
+dependencies: {  }
+id: moderator
+label: Moderator
+weight: -8
+is_admin: null
+permissions:
+  - 'use text format basic_html'
