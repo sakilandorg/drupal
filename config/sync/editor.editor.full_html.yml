@@ -56,7 +56,7 @@ settings:
           name: Media
           items:
             - Blockquote
-            - DrupalImage
+            - DrupalMediaLibrary
         -
           name: Insert
           items:
