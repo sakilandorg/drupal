@@ -5,6 +5,8 @@
 /nbproject/private/
 !/.ddev
 !/.ddev/*
+!/bk
+!/bk/*
 !/scripts/
 !/scripts/*
 /scripts/private-variables.txt
@@ -31,8 +33,11 @@
 !/composer.json
 !/composer.lock
 !/docker-compose.yml
+!/gulpfile.js
 !/LICENSE
 !/load.environment.php
+!/package.json
+!/package-lock.json
 !/phpunit.xml
 !/phpunit.xml.dist
 !/README.md
