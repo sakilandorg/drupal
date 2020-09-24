@@ -6,7 +6,8 @@ id: local
 label: Local
 description: ''
 folder: ../config/splits/local
-module: {  }
+module:
+  upgrade_status: 0
 theme: {  }
 blacklist: {  }
 graylist:

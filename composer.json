@@ -111,5 +111,8 @@
                 "Allow user to specify keyboard shortcut": "https://www.drupal.org/files/issues/1734898-7.coffee-hotkeys.patch"
             }
         }
+    },
+    "require-dev": {
+        "drupal/upgrade_status": "^2.0"
     }
 }
