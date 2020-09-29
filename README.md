@@ -16,7 +16,8 @@ This README use markdown notation, for more info check [Learn Markdown](https://
 * at the end, when all assignments have been resolved and all tests passed, create a pull request from the forked repository
  (source) back to the original (destination)
 
-* test site with be access locally at address http://drupal8.ddev.local if you setup system with ddev as described bellow, or on on http://drupal8.docker.localhost:8000/ if you use some other way.
+* test site with be access locally at address http://drupal8.ddev.site if you set system With DDev Local as described bellow,
+ or on http://drupal8.localhost if you set site manually.
 * admin account:
 ```
 user: admin
@@ -38,14 +39,15 @@ node --version
 npm --version
 npx --version
 ```
+* In project root directory run `npm install` to install all needed package
 * Project contains PhpStorm (IDEA) and Visual Code's configuration files, so you can just open with PhpStorm (IDEA) or Visual Code.
-* You need to deploy project With DDev (Recommended) or Manually as described bellow
+* You need to deploy project With DDev Local (Recommended) or Manually as described bellow
 
-#### With DDev (Recommended) ####
+#### With DDev Local (Recommended) ####
 
-* With DDev, your environment will be set up automaticly. Otherwise, check manual installation section bellow.
+* With DDev Local, your environment will be set up automatically. Otherwise, check manual installation section bellow.
 * Documentation link https://ddev.readthedocs.io/en/stable/
-* After installing DDev on local computer, you can run project with following commands
+* After installing DDev on a local computer, you can run project with following commands
 ```bash
 ddev start
 ```
@@ -57,7 +59,11 @@ gulp import-files
 ```bash
 gulp import-db
 ```
-* Now you can access project via url http://drupal8.ddev.local/
+* Install all needed package via _composer_
+```bash
+ddev composer install
+```
+* Now you can access project via url http://drupal8.ddev.site/
 * When you finish work on project you can stop project (preserving database) with command
 ```bash
 ddev stop
@@ -126,6 +132,10 @@ Here's setting for a virtual host, just replace <absolute-project-directory-loca
 * Copy "files" folder from `<PROJECT-ROOT>/bk/` into `<PROJECT-ROOT>/public_html/sites/default/`
 * Copy "settings.php" file from `<PROJECT-ROOT>/bk/` into `<PROJECT-ROOT>/public_html/sites/default/`
 * Change your Drupal settings.php file to use your database
+* Install all needed package via _composer_
+```bash
+composer install
+```
 * Now you can access site from url
 ```
 drupal8.localhost
