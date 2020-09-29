@@ -9,8 +9,7 @@
 !/bk/*
 !/scripts/
 !/scripts/*
-/scripts/private-variables.txt
-/scripts/private-variables.sh
+/scripts/private-variables.json
 !/behat_tests/
 !/config/
 !/.git/
@@ -67,6 +66,9 @@
 
 # Ignore logs file.
 error_log
+
+# Ignore directory for auto certificate functionality.
+.well-known
 
 #
 # PhpStorm project files
