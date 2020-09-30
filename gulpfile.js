@@ -82,7 +82,7 @@ gulp.task('set-server', function () {
     .pipe(gulp.dest('logs'))
 })
 
-gulp.task('deploy-initial-site-production', gulp.series(
+gulp.task('deploy-initial-production-site', gulp.series(
   function () {
     return gulpSSH
       .shell([
@@ -144,6 +144,76 @@ gulp.task('deploy-initial-site-production', gulp.series(
         'gunzip < ' + customVariables.PRODUCTION.PROJECT_ROOT + '/tmp-initial/db/drupal.sql.gz | ./vendor/bin/drush sqlc',
         './vendor/bin/drush cr',
         'rm -fr ' + customVariables.PRODUCTION.PROJECT_ROOT + '/tmp-initial'
+      ], {filePath: 'deploy-initial-site-2.log'})
+      .on('ssh2Data', function (data) {
+        console.log("" + data)
+      })
+      .pipe(gulp.dest('logs'))
+  }
+))
+
+gulp.task('deploy-initial-test-site', gulp.series(
+  function () {
+    return gulpSSH
+      .shell([
+        'cd ' + customVariables.TEST.PROJECT_ROOT,
+        'pwd',
+        'ls -al ' + customVariables.TEST.PROJECT_WEBROOT,
+        'rm -fr ' + customVariables.TEST.PROJECT_WEBROOT + '/*',
+        'find ' + customVariables.TEST.PROJECT_WEBROOT + ' \\( -iname ".*" ! -iname "." ! -iname ".well-known" \\) -exec rm -rf "{}" \\;',
+        'ls -al ' + customVariables.TEST.PROJECT_WEBROOT,
+        'rm -fr .ddev .git .idea bk config drush private scripts vendor',
+        'rm -f .editorconfig .git-ftp-ignore .gitattributes .gitignore README.md composer.json composer.lock gulpfile.js package-lock.json package.json',
+        'git init',
+        'git status',
+        'git remote add -f origin ' + customVariables.TEST.GIT,
+        'git checkout ' + customVariables.TEST.GIT_BRANCH,
+        'git pull origin ' + customVariables.TEST.GIT_BRANCH,
+        'git submodule init',
+        'git submodule update'
+      ], {filePath: 'deploy-initial-site.log'})
+      .on('ssh2Data', function (data) {
+        console.log("" + data)
+      })
+      .pipe(gulp.dest('logs'))
+  },
+  function () {
+    return gulpSSH
+      .shell([
+        'cd ' + customVariables.TEST.PROJECT_ROOT,
+        'composer install --no-dev'
+      ], {filePath: 'deploy-initial-site-composer.log'})
+      .pipe(gulp.dest('logs'))
+  },
+  function () {
+    return gulp.src('bk/production.settings.local.php')
+      .pipe(replace('databasename', customVariables.TEST.DATABASE.NAME))
+      .pipe(replace('sqlusername', customVariables.TEST.DATABASE.USERNAME))
+      .pipe(replace('sqlpassword', customVariables.TEST.DATABASE.PASSWORD))
+      .pipe(replace('databasehost', customVariables.TEST.DATABASE.HOST))
+      .pipe(replace('databaseport', customVariables.TEST.DATABASE.PORT))
+      .pipe(replace('databasedriver', customVariables.TEST.DATABASE.DRIVER))
+      .pipe(replace('databaseprefix', customVariables.TEST.DATABASE.PREFIX))
+      .pipe(replace('hash_salt_replacement', customVariables.TEST.HASH_SALT))
+      .pipe(replace(/'trusted_host_patterns_replacement'/, function () {
+        let escapedDomain = customVariables.TEST.DOMAIN.replace('.', '\\.');
+        return "'^" + escapedDomain + "$', 'www\\." + escapedDomain + "$'"
+      }))
+      .pipe(rename('settings.local.php'))
+      .pipe(gulpSSH.dest(customVariables.TEST.PROJECT_WEBROOT + '/sites/default/'))
+  },
+  function () {
+    return gulp.src('bk/db/drupal.sql.gz')
+      .pipe(gulpSSH.dest(customVariables.TEST.PROJECT_ROOT + '/tmp-initial/db/'))
+  },
+  function () {
+    return gulpSSH
+      .shell([
+        'cd ' + customVariables.TEST.PROJECT_ROOT,
+        'cp -vr ./bk/files ./public_html/sites/default/',
+        'gunzip < ' + customVariables.TEST.PROJECT_ROOT + '/tmp-initial/db/drupal.sql.gz | ./vendor/bin/drush sqlc',
+        './vendor/bin/drush cr',
+        'rm -fr ' + customVariables.TEST.PROJECT_ROOT + '/tmp-initial'
       ], {filePath: 'deploy-initial-site-2.log'})
       .on('ssh2Data', function (data) {
         console.log("" + data)
