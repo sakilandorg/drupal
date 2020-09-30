@@ -1,0 +1,43 @@
+{
+  "PRODUCTION": {
+    "SSH_URL": "",
+    "SSH_PORT": 22,
+    "SSH_USERNAME": "",
+    "PRIVATE_KEY_PATH": "",
+    "PROJECT_ROOT": "",
+    "PROJECT_WEBROOT": "",
+    "GIT": "username@repository_url",
+    "GIT_BRANCH": "master",
+    "DOMAIN": "example.com",
+    "DATABASE" : {
+      "NAME": "",
+      "USERNAME": "",
+      "PASSWORD": "",
+      "HOST": "localhost",
+      "PORT": "3306",
+      "DRIVER": "mysql",
+      "PREFIX": ""
+    }
+  },
+  "TEST": {
+    "SSH_URL": "",
+    "SSH_PORT": 22,
+    "SSH_USERNAME": "",
+    "PRIVATE_KEY_PATH": "",
+    "PROJECT_ROOT": "",
+    "PROJECT_WEBROOT": "",
+    "GIT": "username@repository_url",
+    "GIT_BRANCH": "develop",
+    "DOMAIN": "example.com",
+    "DATABASE" : {
+      "NAME": "",
+      "USERNAME": "",
+      "PASSWORD": "",
+      "HOST": "localhost",
+      "PORT": "3306",
+      "DRIVER": "mysql",
+      "PREFIX": ""
+    }
+  }
+}
+

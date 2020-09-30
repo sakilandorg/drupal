@@ -5,10 +5,11 @@
 /nbproject/private/
 !/.ddev
 !/.ddev/*
+!/bk
+!/bk/*
 !/scripts/
 !/scripts/*
-/scripts/private-variables.txt
-/scripts/private-variables.sh
+/scripts/private-variables.json
 !/behat_tests/
 !/config/
 !/.git/
@@ -31,8 +32,11 @@
 !/composer.json
 !/composer.lock
 !/docker-compose.yml
+!/gulpfile.js
 !/LICENSE
 !/load.environment.php
+!/package.json
+!/package-lock.json
 !/phpunit.xml
 !/phpunit.xml.dist
 !/README.md
@@ -62,6 +66,9 @@
 
 # Ignore logs file.
 error_log
+
+# Ignore directory for auto certificate functionality.
+.well-known
 
 #
 # PhpStorm project files
