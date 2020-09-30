@@ -82,9 +82,9 @@ $config_directories['sync'] = '../config/sync';
 $settings['config_sync_directory'] = '../config/sync';
 $config['config_split.config_split.local']['status'] = FALSE;
 $config['config_split.config_split.local']['folder'] = '../config/splits/local';
-$config['config_split.config_split.dev']['status'] = FALSE;
+$config['config_split.config_split.dev']['status'] = TRUE;
 $config['config_split.config_split.dev']['folder'] = '../config/splits/dev';
-$config['config_split.config_split.live']['status'] = TRUE;
+$config['config_split.config_split.live']['status'] = FALSE;
 $config['config_split.config_split.live']['folder'] = '../config/splits/live';
 
 /**

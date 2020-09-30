@@ -223,6 +223,12 @@ and restore it
 ddev restore-snapshot d8git_20180801132403
 ```
 
+To generate custom Drupal _hash_salt_, login to ddev container with command `ddev ssh`
+and run following drush command (_do not use `ddev exec` for this, it will not work_):
+```bash
+drush php-eval 'echo \Drupal\Component\Utility\Crypt::randomBytesBase64(55) . "\n";'
+```
+
 #### Run tests ####
 First you need to creat _phpunit.xml_ file in project root. Here's initial version of it
 ```xml

@@ -9,6 +9,7 @@
     "GIT": "username@repository_url",
     "GIT_BRANCH": "master",
     "DOMAIN": "example.com",
+    "HASH_SALT": "",
     "DATABASE" : {
       "NAME": "",
       "USERNAME": "",
@@ -28,7 +29,8 @@
     "PROJECT_WEBROOT": "",
     "GIT": "username@repository_url",
     "GIT_BRANCH": "develop",
-    "DOMAIN": "example.com",
+    "DOMAIN": "test.example.com",
+    "HASH_SALT": "",
     "DATABASE" : {
       "NAME": "",
       "USERNAME": "",
