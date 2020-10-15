@@ -186,7 +186,7 @@ gulp.task('deploy-initial-test-site', gulp.series(
       .pipe(gulp.dest('logs'))
   },
   function () {
-    return gulp.src('bk/production.settings.local.php')
+    return gulp.src('bk/test.settings.local.php')
       .pipe(replace('databasename', customVariables.TEST.DATABASE.NAME))
       .pipe(replace('sqlusername', customVariables.TEST.DATABASE.USERNAME))
       .pipe(replace('sqlpassword', customVariables.TEST.DATABASE.PASSWORD))
