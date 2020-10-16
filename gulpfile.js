@@ -20,6 +20,14 @@ gulp.task('export-config-changes', function () {
   return run('ddev exec drush cex', {}).exec();
 })
 
+gulp.task('enable-develop-mode', function () {
+  return run('ddev exec drupal site:mode dev', {}).exec();
+})
+
+gulp.task('disable-develop-mode', function () {
+  return run('ddev exec drupal site:mode prod', {}).exec();
+})
+
 gulp.task('import-database', function () {
   return run('ddev import-db --src ./bk/db/drupal.sql.gz', {}).exec();
 })
