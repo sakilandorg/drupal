@@ -37,6 +37,19 @@
 $settings['hash_salt'] = 'hash_salt_replacement';
 
 /**
+ * Temporary file path:
+ *
+ * A local file system path where temporary files will be stored. This directory
+ * must be absolute, outside of the Drupal installation directory and not
+ * accessible over the web.
+ *
+ * If this is not set, the default for the operating system will be used.
+ *
+ * @see \Drupal\Component\FileSystem\FileSystem::getOsTemporaryDirectory()
+ */
+$settings['file_temp_path'] = 'file_temp_path_replacement';
+
+/**
  * Trusted host configuration.
  *
  * Drupal core can use the Symfony trusted host mechanism to prevent HTTP Host

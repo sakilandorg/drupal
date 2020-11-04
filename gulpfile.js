@@ -133,6 +133,7 @@ gulp.task('deploy-initial-production-site', gulp.series(
       .pipe(replace('databasedriver', customVariables.PRODUCTION.DATABASE.DRIVER))
       .pipe(replace('databaseprefix', customVariables.PRODUCTION.DATABASE.PREFIX))
       .pipe(replace('hash_salt_replacement', customVariables.PRODUCTION.HASH_SALT))
+      .pipe(replace('file_temp_path_replacement', customVariables.PRODUCTION.PROJECT_ROOT + '/tmp'))
       .pipe(replace(/'trusted_host_patterns_replacement'/, function () {
         let escapedDomain = customVariables.PRODUCTION.DOMAIN.replace('.', '\\.');
         return "'^" + escapedDomain + "$', 'www\\." + escapedDomain + "$'"
@@ -203,6 +204,7 @@ gulp.task('deploy-initial-test-site', gulp.series(
       .pipe(replace('databasedriver', customVariables.TEST.DATABASE.DRIVER))
       .pipe(replace('databaseprefix', customVariables.TEST.DATABASE.PREFIX))
       .pipe(replace('hash_salt_replacement', customVariables.TEST.HASH_SALT))
+      .pipe(replace('file_temp_path_replacement', customVariables.TEST.PROJECT_ROOT + '/tmp'))
       .pipe(replace(/'trusted_host_patterns_replacement'/, function () {
         let escapedDomain = customVariables.TEST.DOMAIN.replace('.', '\\.');
         return "'^" + escapedDomain + "$', 'www\\." + escapedDomain + "$'"
