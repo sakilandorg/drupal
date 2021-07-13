@@ -119,6 +119,6 @@
         }
     },
     "require-dev": {
-        "drupal/upgrade_status": "^2.0"
+        "drupal/upgrade_status": "^3.0"
     }
 }
