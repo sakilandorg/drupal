@@ -1,11 +1,19 @@
 # README #
 
-This README use markdown notation, for more info check [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+This is Drupal 9 base project with some preconfigured modules.
 
-### Drupal 8 site project ###
+IMPORTANT: This is not
+[Drupal installation profile](https://www.drupal.org/docs/distributions/creating-distributions/how-to-write-a-drupal-installation-profile),
+it uses Drupal configuration to set up preconfigured modules. So, you can use this project as the start point
+and then to upgrade module and Drupal core in regular way, and you will not be dependent on the starter configuration
+and maintenance progress of this project has no influence on your project.
 
-* Drupal 8 site with PhpStorm (Idea) and Ddev support
-* Version 2.1
+_This README use markdown notation, for more info check [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)_
+
+### Drupal 9 site project ###
+
+* Drupal 9 site with PhpStorm (Idea) and Ddev support
+* Version 3.1
 
 ### Basic information ###
 
