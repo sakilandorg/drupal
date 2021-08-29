@@ -1,0 +1,13 @@
+uuid: 9d8d9b0b-0b12-41b4-8ed3-4bae9d4b4363
+langcode: en
+status: true
+dependencies: {  }
+id: monthly_db_backup
+label: 'Monthly DB Backup'
+enabled: true
+keep: 36
+period: 2419200
+cron: null
+source_id: default_db
+destination_id: private_files
+settings_profile_id: encrypted_profile

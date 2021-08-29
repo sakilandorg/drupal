@@ -1,0 +1,13 @@
+uuid: bab31d9a-f5c9-4d33-9adf-67f5babc3b7c
+langcode: en
+status: true
+dependencies: {  }
+id: daily_files_backup
+label: 'Daily Files Backup'
+enabled: true
+keep: 7
+period: 86400
+cron: null
+source_id: public_files
+destination_id: private_files
+settings_profile_id: encrypted_profile

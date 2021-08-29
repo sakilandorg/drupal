@@ -1,0 +1,13 @@
+uuid: 0f7643b2-d8f7-4b17-b14a-534561b93428
+langcode: en
+status: true
+dependencies: {  }
+id: weekly_db_backup
+label: 'Weekly DB Backup'
+enabled: true
+keep: 52
+period: 604800
+cron: null
+source_id: default_db
+destination_id: private_files
+settings_profile_id: encrypted_profile
