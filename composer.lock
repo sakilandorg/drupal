@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d05586ab4e1b80a4df4f0abbc8e89ef4",
+    "content-hash": "df24bf367164b4a1ffca6d2f2cc8e485",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2899,6 +2899,54 @@
             "support": {
                 "source": "http://drupalcode.org/seo_checklist",
                 "issues": "https://www.drupal.org/project/issues/seo_checklist"
+            }
+        },
+        {
+            "name": "drupal/user_online_status",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/user_online_status.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/user_online_status-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "aae9e2b92d1ddf396e0242626b6c24be6cf58a9e"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1582110082",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "arthur_lorenz",
+                    "homepage": "https://www.drupal.org/user/3529915"
+                },
+                {
+                    "name": "leymannx",
+                    "homepage": "https://www.drupal.org/user/2482808"
+                }
+            ],
+            "description": "Show if a user is online or offline on their account page.",
+            "homepage": "https://www.drupal.org/project/user_online_status",
+            "support": {
+                "source": "https://git.drupalcode.org/project/user_online_status"
             }
         },
         {
