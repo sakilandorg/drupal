@@ -32,6 +32,7 @@ module:
   filter: 0
   help: 0
   history: 0
+  hreflang: 0
   image: 0
   language: 0
   layout_builder: 0
