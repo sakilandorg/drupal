@@ -52,6 +52,7 @@
         "drupal/redirect": "^1.6",
         "drupal/schema_metatag": "^2.2",
         "drupal/seo_checklist": "^5.0",
+        "drupal/simple_sitemap": "^3.10",
         "drupal/user_online_status": "^1.0",
         "drush/drush": "^10.2"
     },
