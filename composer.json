@@ -49,6 +49,7 @@
         "drupal/module_filter": "^3.1",
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
+        "drupal/schema_metatag": "^2.2",
         "drupal/seo_checklist": "^5.0",
         "drupal/user_online_status": "^1.0",
         "drush/drush": "^10.2"
