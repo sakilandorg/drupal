@@ -46,6 +46,8 @@
         "drupal/core-recommended": "^9",
         "drupal/environment_indicator": "^4.0",
         "drupal/module_filter": "^3.1",
+        "drupal/pathauto": "^1.8",
+        "drupal/redirect": "^1.6",
         "drupal/seo_checklist": "^5.0",
         "drupal/user_online_status": "^1.0",
         "drush/drush": "^10.2"
