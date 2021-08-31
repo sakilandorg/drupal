@@ -24,6 +24,7 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  editor_advanced_link: 0
   environment_indicator: 0
   environment_indicator_ui: 0
   field: 0
