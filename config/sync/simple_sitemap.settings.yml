@@ -16,3 +16,4 @@ enabled_entity_types:
 entities_per_queue_item: 50
 _core:
   default_config_hash: fFCOUWimqdj2E7qYCcYmI2LH7rwpaLEUOfi69hUFuXk
+disable_language_hreflang: false
