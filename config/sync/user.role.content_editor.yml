@@ -33,6 +33,8 @@ permissions:
   - 'edit own remote_video media'
   - 'edit own video media'
   - 'update media'
+  - 'use text format advanced_html'
+  - 'use text format basic_html'
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view the administration theme'

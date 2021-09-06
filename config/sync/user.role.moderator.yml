@@ -56,6 +56,7 @@ permissions:
   - 'translate interface'
   - 'update any media'
   - 'update media'
+  - 'use text format advanced_html'
   - 'use text format basic_html'
   - 'view all media revisions'
   - 'view own unpublished content'
