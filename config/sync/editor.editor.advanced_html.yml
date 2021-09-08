@@ -1,0 +1,84 @@
+uuid: 8def0060-0833-495d-aa16-6070deb0a93d
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.advanced_html
+  module:
+    - ckeditor
+format: advanced_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Format
+            - Bold
+            - Italic
+            - Underline
+            - Strike
+            - Superscript
+            - Subscript
+            - RemoveFormat
+        -
+          name: Actions
+          items:
+            - Undo
+            - Redo
+            - Copy
+            - Cut
+            - Paste
+            - PasteText
+            - PasteFromWord
+        -
+          name: Text
+          items:
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+            - Outdent
+            - Indent
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalMediaLibrary
+        -
+          name: Insert
+          items:
+            - HorizontalRule
+            - SpecialChar
+            - Table
+        -
+          name: Tools
+          items:
+            - Maximize
+            - ShowBlocks
+            - Source
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

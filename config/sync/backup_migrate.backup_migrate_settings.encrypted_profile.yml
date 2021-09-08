@@ -1,0 +1,48 @@
+uuid: c3dbdcdc-0a81-47f2-baba-8f197f0effb8
+langcode: en
+status: true
+dependencies: {  }
+id: encrypted_profile
+label: 'Encrypted profile'
+config:
+  namer:
+    filename: backup
+    timestamp: true
+    timestamp_format: Y-m-d\TH-i-s
+  compressor:
+    compression: gzip
+  encrypt:
+    encrypt: 1
+    encrypt_password: youshouldchangethis
+  utils:
+    site_offline: false
+  metadata:
+    description: ''
+  db_exclude:
+    exclude_tables: {  }
+    nodata_tables:
+      cache_bootstrap: cache_bootstrap
+      cache_config: cache_config
+      cache_container: cache_container
+      cache_data: cache_data
+      cache_default: cache_default
+      cache_discovery: cache_discovery
+      cache_dynamic_page_cache: cache_dynamic_page_cache
+      cache_entity: cache_entity
+      cache_menu: cache_menu
+      cache_page: cache_page
+      cache_render: cache_render
+      cache_toolbar: cache_toolbar
+      sessions: sessions
+      watchdog: watchdog
+  private_files_exclude:
+    exclude_filepaths:
+      - backup_migrate
+  public_files_exclude:
+    exclude_filepaths:
+      - js
+      - css
+      - php
+      - styles
+      - 'config_*'
+      - .htaccess

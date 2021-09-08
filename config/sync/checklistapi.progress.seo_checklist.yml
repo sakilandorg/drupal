@@ -1,0 +1,80 @@
+progress:
+  '#changed': 1630677147
+  '#changed_by': '1'
+  '#completed_items': 25
+  '#items':
+    install_and_enable_seo_checklist_module:
+      '#completed': 1630315225
+      '#uid': '1'
+    install_and_enable_coffee_module:
+      '#completed': 1630315225
+      '#uid': '1'
+    configure_coffee_module:
+      '#completed': 1630315225
+      '#uid': '1'
+    install_and_enable_admin_toolbar_module:
+      '#completed': 1630315225
+      '#uid': '1'
+    install_composer_command_line_tool:
+      '#completed': 1630315225
+      '#uid': '1'
+    install_drush_command_line_tool:
+      '#completed': 1630315225
+      '#uid': '1'
+    show_cli_commands:
+      '#completed': 1630332621
+      '#uid': '1'
+    enable_clean_urls:
+      '#completed': 1630332964
+      '#uid': '1'
+    install_and_enable_redirect_module:
+      '#completed': 1630335451
+      '#uid': '1'
+    configure_the_redirect_module:
+      '#completed': 1630335451
+      '#uid': '1'
+    install_and_enable_pathauto_module:
+      '#completed': 1630335451
+      '#uid': '1'
+    configure_pathauto_module:
+      '#completed': 1630335527
+      '#uid': '1'
+    create_pathauto_patterns:
+      '#completed': 1630335527
+      '#uid': '1'
+    install_and_enable_metatag_module:
+      '#completed': 1630340215
+      '#uid': '1'
+    install_and_enable_schema_metatag:
+      '#completed': 1630340215
+      '#uid': '1'
+    set_metatags_for_your_site:
+      '#completed': 1630340215
+      '#uid': '1'
+    install_and_enable_alternate_hreflang_module:
+      '#completed': 1630340470
+      '#uid': '1'
+    install_and_enable_xml_sitemap_module:
+      '#completed': 1630407494
+      '#uid': '1'
+    configure_xml_sitemap_module:
+      '#completed': 1630407494
+      '#uid': '1'
+    install_and_enable_easy_breadcrumbs_module:
+      '#completed': 1630423643
+      '#uid': '1'
+    configure_easy_breadcrumbs_module:
+      '#completed': 1630423643
+      '#uid': '1'
+    install_and_enable_d8_editor_advanced_link_module:
+      '#completed': 1630423643
+      '#uid': '1'
+    configure_text_formats_to_use_d8_editor_advanced_link_module:
+      '#completed': 1630423643
+      '#uid': '1'
+    install_and_enable_diff_module:
+      '#completed': 1630427969
+      '#uid': '1'
+    configure_the_diff_module:
+      '#completed': 1630427969
+      '#uid': '1'
