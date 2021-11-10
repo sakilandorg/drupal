@@ -9,6 +9,17 @@ name: 'Advanced HTML'
 format: advanced_html
 weight: -9
 filters:
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types:
+        image: image
+        remote_video: remote_video
+      allowed_view_modes: {  }
   editor_file_reference:
     id: editor_file_reference
     provider: editor
@@ -48,14 +59,3 @@ filters:
     status: true
     weight: 0
     settings: {  }
-  media_embed:
-    id: media_embed
-    provider: media
-    status: true
-    weight: 100
-    settings:
-      default_view_mode: default
-      allowed_media_types:
-        image: image
-        remote_video: remote_video
-      allowed_view_modes: {  }
