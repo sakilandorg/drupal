@@ -751,7 +751,6 @@ $settings['entity_update_backup'] = TRUE;
 /**
  * Configuration sync settings.
  */
-$config_directories['sync'] = '../config/sync';
 $settings['config_sync_directory'] = '../config/sync';
 $config['config_split.config_split.local']['status'] = TRUE;
 $config['config_split.config_split.local']['folder'] = '../config/splits/local';
