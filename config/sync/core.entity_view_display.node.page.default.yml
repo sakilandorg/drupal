@@ -15,8 +15,8 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: true
     enabled: true
+    allow_custom: true
     sections:
       -
         layout_id: layout_onecol
@@ -28,42 +28,42 @@ third_party_settings:
             uuid: 86c893f6-0d12-472d-98aa-92ed06c01a37
             region: content
             configuration:
+              id: 'extra_field_block:node:page:links'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'extra_field_block:node:page:links'
-            additional: {  }
             weight: 0
+            additional: {  }
           80691725-485e-4c39-91ad-4dff826dc19a:
             uuid: 80691725-485e-4c39-91ad-4dff826dc19a
             region: content
             configuration:
+              id: 'field_block:node:page:body'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:page:body'
               formatter:
-                label: hidden
                 type: text_default
+                label: hidden
                 settings: {  }
                 third_party_settings: {  }
-            additional: {  }
             weight: 1
+            additional: {  }
           3ec9543f-ac38-4592-891d-4235bae0b22f:
             uuid: 3ec9543f-ac38-4592-891d-4235bae0b22f
             region: content
             configuration:
+              id: 'field_block:node:page:field_meta_tags'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:page:field_meta_tags'
               formatter:
+                type: metatag_empty_formatter
                 label: above
                 settings: {  }
                 third_party_settings: {  }
-                type: metatag_empty_formatter
-            additional: {  }
             weight: 2
+            additional: {  }
         third_party_settings: {  }
 id: node.page.default
 targetEntityType: node
@@ -71,24 +71,24 @@ bundle: page
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 101
     region: content
   field_meta_tags:
-    weight: 102
+    type: metatag_empty_formatter
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: metatag_empty_formatter
+    weight: 102
     region: content
   links:
-    weight: 100
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 100
+    region: content
 hidden:
   langcode: true
   layout_builder__layout: true

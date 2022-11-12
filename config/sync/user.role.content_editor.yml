@@ -1,7 +1,24 @@
 uuid: ca8cafbf-647e-44ae-b037-6b34e22413c8
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.advanced_html
+    - filter.format.basic_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.page
+  module:
+    - contextual
+    - environment_indicator
+    - filter
+    - media
+    - node
+    - system
+    - toolbar
 id: content_editor
 label: 'Content editor'
 weight: -8
