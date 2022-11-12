@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f73682fe8fb016ec2c38fd6dd629519",
+    "content-hash": "919d74180604d5eab04d5c5e2850e8b1",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -242,18 +242,6 @@
                 "source": "https://github.com/Chi-teck/drupal-code-generator/tree/1.33.1"
             },
             "time": "2020-12-05T05:59:11+00:00"
-        },
-        {
-            "name": "ckeditor/div",
-            "version": "4.10.1",
-            "dist": {
-                "type": "zip",
-                "url": "https://download.ckeditor.com/div/releases/div_4.10.1.zip"
-            },
-            "type": "drupal-library",
-            "extra": {
-                "installer-name": "ckeditor/plugins/div"
-            }
         },
         {
             "name": "composer/installers",
@@ -2047,56 +2035,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/checklistapi",
                 "issues": "https://www.drupal.org/project/issues/checklistapi"
-            }
-        },
-        {
-            "name": "drupal/ckeditor_div_manager",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/ckeditor_div_manager.git",
-                "reference": "8.x-1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditor_div_manager-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "2aba67e132e0d54886e8bdc9914f51a6160d3875"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1615574655",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Corey Eiseman",
-                    "homepage": "https://www.drupal.org/u/toegristle",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "toegristle",
-                    "homepage": "https://www.drupal.org/user/1802910"
-                }
-            ],
-            "description": "Adds the Div Container Manager plugin to CKEditor.",
-            "homepage": "https://www.drupal.org/project/ckeditor_div_manager",
-            "support": {
-                "source": "https://cgit.drupalcode.org/ckeditor_div_manager",
-                "issues": "https://www.drupal.org/project/issues/ckeditor_div_manager"
             }
         },
         {
