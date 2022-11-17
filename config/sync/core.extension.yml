@@ -86,4 +86,5 @@ module:
 theme:
   claro: 0
   bartik: 0
+  olivero: 0
 profile: minimal
