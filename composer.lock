@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95a41488a716e3230f3c235d7c897429",
+    "content-hash": "8371b06b6eea45cc36df161c6418acc9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1709,20 +1709,20 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "3.2.1",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-                "reference": "3.2.1"
+                "reference": "3.4.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-3.2.1.zip",
-                "reference": "3.2.1",
-                "shasum": "7a4bfb716e269be4ca03b7f04e29e4439ec6cf93"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-3.4.1.zip",
+                "reference": "3.4.1",
+                "shasum": "bcb15ab40016becdb3ac8f21d7d1a721f48f3577"
             },
             "require": {
-                "drupal/core": "^8.8.0 || ^9.0"
+                "drupal/core": "^9.2 || ^10"
             },
             "require-dev": {
                 "drupal/admin_toolbar_tools": "*"
@@ -1730,8 +1730,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.2.1",
-                    "datestamp": "1665044276",
+                    "version": "3.4.1",
+                    "datestamp": "1684944156",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1790,26 +1790,26 @@
         },
         {
             "name": "drupal/allowed_formats",
-            "version": "1.5.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/allowed_formats.git",
-                "reference": "8.x-1.5"
+                "reference": "2.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/allowed_formats-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "dbf61bee7aec87beaa2cf307c1d0d9d5b896328c"
+                "url": "https://ftp.drupal.org/files/projects/allowed_formats-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "ac6c6d398f303608ced7e9cd9d4556a728dc41f0"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9"
+                "drupal/core": "^9.2 || ^10"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1648060331",
+                    "version": "2.0.0",
+                    "datestamp": "1669170410",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1965,17 +1965,17 @@
         },
         {
             "name": "drupal/checklistapi",
-            "version": "2.1.1",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/checklistapi.git",
-                "reference": "2.1.1"
+                "reference": "2.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/checklistapi-2.1.1.zip",
-                "reference": "2.1.1",
-                "shasum": "69acb461c13aa7d37a91da078c3ceb0818543b87"
+                "url": "https://ftp.drupal.org/files/projects/checklistapi-2.1.3.zip",
+                "reference": "2.1.3",
+                "shasum": "05c28a384044049af26a51c23c846cdd0eea9ce7"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -1984,8 +1984,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.1",
-                    "datestamp": "1659116985",
+                    "version": "2.1.3",
+                    "datestamp": "1687522401",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2007,8 +2007,16 @@
             "authors": [
                 {
                     "name": "Travis Carden",
-                    "homepage": "https://www.drupal.org/user/236758",
+                    "homepage": "https://www.drupal.org/user/3550392",
                     "email": "travis.carden@gmail.com"
+                },
+                {
+                    "name": "Rajeshreeputra",
+                    "homepage": "https://www.drupal.org/user/3418561"
+                },
+                {
+                    "name": "TravisCarden",
+                    "homepage": "https://www.drupal.org/user/236758"
                 },
                 {
                     "name": "VladimirAus",
@@ -3122,29 +3130,30 @@
         },
         {
             "name": "drupal/editor_advanced_link",
-            "version": "2.1.1",
+            "version": "2.2.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/editor_advanced_link.git",
-                "reference": "2.1.1"
+                "reference": "2.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/editor_advanced_link-2.1.1.zip",
-                "reference": "2.1.1",
-                "shasum": "ba8f12aee9ac6c4d7b60ee916e7bd69e98c99d4a"
+                "url": "https://ftp.drupal.org/files/projects/editor_advanced_link-2.2.4.zip",
+                "reference": "2.2.4",
+                "shasum": "cd0db397827f2e21ec8a68211e8a153463a6c89b"
             },
             "require": {
                 "drupal/core": "^9.2 || ^10"
             },
             "require-dev": {
-                "drupal/ckeditor": "*"
+                "drupal/ckeditor": "*",
+                "phpro/grumphp": "^2.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.1",
-                    "datestamp": "1667462197",
+                    "version": "2.2.4",
+                    "datestamp": "1688040059",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3161,7 +3170,7 @@
                     "homepage": "https://www.drupal.org/user/931394"
                 }
             ],
-            "description": "Add title, target etc. attributes to Text Editor's link dialog if the text format allows them.",
+            "description": "Editor Advanced link",
             "homepage": "https://www.drupal.org/project/editor_advanced_link",
             "support": {
                 "source": "https://git.drupalcode.org/project/editor_advanced_link"
@@ -3777,27 +3786,51 @@
         },
         {
             "name": "drupal/seo_checklist",
-            "version": "5.1.0",
+            "version": "5.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/seo_checklist.git",
-                "reference": "5.1.0"
+                "reference": "5.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/seo_checklist-5.1.0.zip",
-                "reference": "5.1.0",
-                "shasum": "fed410fef98a748e4b0ed90142b4f6a8ae6e86b8"
+                "url": "https://ftp.drupal.org/files/projects/seo_checklist-5.2.0.zip",
+                "reference": "5.2.0",
+                "shasum": "648f1322d95da131562f0c8f25d4a7a37b4e2861"
             },
             "require": {
                 "drupal/checklistapi": "^2.0",
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8.8 || ^9 || ^10"
+            },
+            "require-dev": {
+                "drupal/addtoany": "*",
+                "drupal/admin_toolbar": "*",
+                "drupal/advagg": "*",
+                "drupal/cloudflare": "*",
+                "drupal/coffee": "*",
+                "drupal/diff": "*",
+                "drupal/easy_breadcrumb": "*",
+                "drupal/editor_advanced_link": "*",
+                "drupal/filefield_paths": "*",
+                "drupal/google_tag": "*",
+                "drupal/honeypot": "*",
+                "drupal/hreflang": "*",
+                "drupal/metatag": "*",
+                "drupal/pathauto": "*",
+                "drupal/redirect": "*",
+                "drupal/robotstxt": "*",
+                "drupal/scheduler": "*",
+                "drupal/search404": "*",
+                "drupal/security_review": "*",
+                "drupal/sitemap": "*",
+                "drupal/xmlsitemap": "*",
+                "drupal/yoast_seo": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "5.1.0",
-                    "datestamp": "1629912904",
+                    "version": "5.2.0",
+                    "datestamp": "1687450936",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
