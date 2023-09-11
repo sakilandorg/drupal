@@ -1,75 +1,91 @@
-uuid: 8def0060-0833-495d-aa16-6070deb0a93d
+uuid: e815c6c7-ea22-43d8-8483-a66eff8ae1fa
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.advanced_html
   module:
-    - ckeditor
+    - ckeditor5
 format: advanced_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Format
-            - Bold
-            - Italic
-            - Underline
-            - Strike
-            - Superscript
-            - Subscript
-            - RemoveFormat
-        -
-          name: Actions
-          items:
-            - Undo
-            - Redo
-            - Copy
-            - Cut
-            - Paste
-            - PasteText
-            - PasteFromWord
-        -
-          name: Text
-          items:
-            - JustifyLeft
-            - JustifyCenter
-            - JustifyRight
-            - JustifyBlock
-            - Outdent
-            - Indent
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalMediaLibrary
-        -
-          name: Insert
-          items:
-            - HorizontalRule
-            - SpecialChar
-            - Table
-        -
-          name: Tools
-          items:
-            - Maximize
-            - ShowBlocks
-            - Source
-  plugins: {  }
+    items:
+      - heading
+      - bold
+      - italic
+      - underline
+      - strikethrough
+      - superscript
+      - subscript
+      - removeFormat
+      - '|'
+      - undo
+      - redo
+      - '|'
+      - alignment
+      - outdent
+      - indent
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - drupalMedia
+      - '|'
+      - horizontalLine
+      - specialCharacters
+      - insertTable
+      - '|'
+      - sourceEditing
+      - '|'
+      - code
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<cite>'
+        - '<dl>'
+        - '<dt>'
+        - '<dd>'
+        - '<span>'
+        - '<img src alt height width data-entity-type data-entity-uuid data-align data-caption>'
+        - '<a hreflang target>'
+        - '<blockquote cite>'
+        - '<ul type>'
+        - '<ol type>'
+        - '<h2 id>'
+        - '<h3 id>'
+        - '<h4 id>'
+        - '<h5 id>'
+        - '<h6 id>'
+        - '<drupal-media title>'
+    ckeditor5_list:
+      reversed: false
+      startIndex: true
+    ckeditor5_alignment:
+      enabled_alignments:
+        - left
+        - center
+        - right
+        - justify
+    media_media:
+      allow_view_mode_override: false
+    editor_advanced_link_link:
+      enabled_attributes:
+        - class
+        - id
+        - rel
+        - target
+        - title
 image_upload:
   status: false
   scheme: public
