@@ -17,7 +17,7 @@ _This README use markdown notation, for more info check [Learn Markdown](https:/
 
 ### Basic information ###
 
-* As first step, make fork of this repository
+* As first step, make fork of this repository (this is for test environment and should be deleted from here)
     * more info on [link](https://confluence.atlassian.com/bitbucket/forking-a-repository-221449527.html)
     * and detailed information of complete process on [link](https://www.atlassian.com/git/tutorials/learn-about-code-review-in-bitbucket-cloud)
 * all assignments should be pushed on forked repository
@@ -32,6 +32,16 @@ user: admin
 pass: admin1@3
 ```
 * assignments for the test are in the section [Assignments](#assignments) in this document
+
+### Creating a new project ###
+
+* Clone this repo
+* Delete git folder
+``` shell
+rm -rf .git/
+git init
+git remote add origin [THE_GIT_URL]
+```
 
 ### Set up environment ###
 * Clone project from this git repo

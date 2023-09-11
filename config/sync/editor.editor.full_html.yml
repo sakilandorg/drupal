@@ -1,80 +1,75 @@
-uuid: c2caeffe-0b27-4eb5-8171-cd148dd13232
+uuid: 395d26db-ec27-4058-ad07-299de6a87b67
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.full_html
   module:
-    - ckeditor
+    - ckeditor5
 format: full_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Format
-            - Bold
-            - Italic
-            - Underline
-            - Strike
-            - Superscript
-            - Subscript
-            - RemoveFormat
-        -
-          name: Actions
-          items:
-            - Undo
-            - Redo
-            - Cut
-            - Copy
-            - Paste
-            - PasteText
-            - PasteFromWord
-        -
-          name: Text
-          items:
-            - JustifyLeft
-            - JustifyCenter
-            - JustifyRight
-            - JustifyBlock
-            - Outdent
-            - Indent
-        -
-          name: Links
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalMediaLibrary
-        -
-          name: Insert
-          items:
-            - HorizontalRule
-            - SpecialChar
-            - Table
-        -
-          name: Tools
-          items:
-            - Maximize
-            - ShowBlocks
-            - CreateDiv
-            - Source
+    items:
+      - heading
+      - codeBlock
+      - bold
+      - italic
+      - underline
+      - strikethrough
+      - superscript
+      - subscript
+      - removeFormat
+      - '|'
+      - undo
+      - redo
+      - '|'
+      - alignment
+      - outdent
+      - indent
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - drupalMedia
+      - '|'
+      - horizontalLine
+      - specialCharacters
+      - insertTable
+      - '|'
+      - sourceEditing
   plugins:
-    stylescombo:
-      styles: ''
-    language:
-      language_list: un
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+    ckeditor5_list:
+      reversed: true
+      startIndex: true
+    ckeditor5_alignment:
+      enabled_alignments:
+        - left
+        - center
+        - right
+        - justify
+    media_media:
+      allow_view_mode_override: false
+    editor_advanced_link_link:
+      enabled_attributes:
+        - aria-label
+        - class
+        - id
+        - rel
+        - target
+        - title
 image_upload:
   status: true
   scheme: public

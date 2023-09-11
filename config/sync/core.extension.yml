@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   admin_toolbar: 0
   admin_toolbar_links_access_filter: 0
@@ -12,7 +14,7 @@ module:
   breakpoint: 0
   checklistapi: 0
   ckeditor: 0
-  ckeditor_div_manager: 0
+  ckeditor5: 0
   coffee: 0
   color: 0
   config: 0
@@ -51,6 +53,7 @@ module:
   menu_ui: 0
   metatag: 0
   module_filter: 0
+  mysql: 0
   node: 0
   options: 0
   page_cache: 0
@@ -84,6 +87,5 @@ module:
 theme:
   claro: 0
   bartik: 0
+  olivero: 0
 profile: minimal
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

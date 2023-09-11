@@ -5,6 +5,7 @@ dependencies: {  }
 id: dev
 label: Dev
 description: ''
+weight: 0
 folder: ../config/splits/dev
 module: {  }
 theme: {  }
@@ -14,4 +15,3 @@ graylist:
   - environment_indicator.settings
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 0
