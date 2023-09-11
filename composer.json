@@ -42,7 +42,7 @@
         "drupal/redirect": "^1.6",
         "drupal/schema_metatag": "^2.2",
         "drupal/seo_checklist": "^5.0",
-        "drupal/simple_sitemap": "^3.10",
+        "drupal/simple_sitemap": "^4.1",
         "drupal/simplify": "^1.2",
         "drupal/svg_image": "^1.15",
         "drupal/twig_field_value": "^2.0",
