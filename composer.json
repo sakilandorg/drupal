@@ -127,9 +127,6 @@
             "drupal/coffee": {
                 "Allow user to specify keyboard shortcut": "https://www.drupal.org/files/issues/1734898-7.coffee-hotkeys.patch"
             },
-            "drupal/module_filter": {
-                "Security update filter on Available updates": "https://www.drupal.org/files/issues/2020-09-14/module_filter-security_update_filter_not_working-3138417-9.patch"
-            },
             "drupal/user_online_status": {
                 "Online status not shown in views": "https://www.drupal.org/files/issues/2021-03-23/3179134-allow-get-method-on-get-user-status-route.patch"
             }
